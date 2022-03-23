@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.4s;
+}
+
+/*Corpo Pagina*/
+body {
+  background-color: rgb(148, 148, 148);
+}
+
+/*Botao Reset*/
+#reset {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+#reset img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  
+}
+/*Botao Login*/
+#login{
+  display: flow-root;
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.loginBtn {
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+}
+/*Botões*/
+button img{
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+}
+
+button:hover {
+  border-radius: 200px;
+  border-style:inherit;
+}
+button img:hover {
+  border-style:inherit;
+}
+
+
+/*Titulo Principal*/
+h1 {
+  display: flow-root;
+  font-size: 60px;
+  padding: .5em 1em;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid lightgrey;
+  color: rgb(223, 223, 223);
+  text-align: center;
+}
+/*Titulo Secundario*/
+h2 {
+  display: flow-root;
+  padding: .5em 1em;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  color: rgb(223, 223, 223);
+  text-align: center;
+}
+h1, h2{ 
+  background-image: url("./imagens/Design.gif");
+  color: rgb(255, 81, 0);
+  border-color: rgba(95, 95, 95, 0.829);
+}
+
+
+/*Formulario*/
+form{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  padding: 10vh;
+}
+form label {
+  color: aliceblue;
+  font-size: 18px;
+}
+form input:hover {
+  font-size: 20px;
+}
+
+
+/*Container*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2em 10%;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+  width:30em;
+  box-sizing: border-box;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.container img {
+  max-width:  100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+.container h3 {
+  padding-top: 10px;
+  color: #ffffff;
+  font-size: 1em;
+  margin-bottom: .2em;
+}
+.container h4 {
+  padding-top: 5px;
+  color: #ffffff;
+  font-size: 1em;
+  margin-bottom: .2em;
+}
+
+.container img:hover {
+  transform: scale(1.03);
+  opacity: 70%;
+  transition: all 1.8s cubic-bezier(.19, 1, .22, 1);
+}
+
+ .card p{
+  color: rgb(230, 230, 230);
+}
+
+
+
+/********************* MEDIA QUERIES *****************/
+
+
+@media only screen and (max-device-width: 900px)
+ { 
+    
+  form{
+    margin-right:-1000px;
+    display: grid;
+    grid-template-columns: 1vh 1vh;
+    width: 100%;
+  } 
+  .card{
+    justify-content: space-around 1vh 1vh;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    flex-wrap:wrap;
+    margin-bottom: 15px;
+  }
+
+  h1, h2 {
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .loginBtn{
+    width: auto;
+    bottom: 60%;
+  }
+  #reset {
+    margin-top: 15px;
+    width: auto;
+  }
+  #reset img {
+    width: auto;
+  }
+  .card {
+      max-width: auto;
+      margin: 0 auto;
+      display: block;
+  }
+
+  .card img {
+    max-width: auto;
+    display: block; 
+    margin: 0 auto;
+  }
+
+}
