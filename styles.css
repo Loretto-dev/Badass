@@ -96,7 +96,7 @@ form input:hover {
 }
 
 
-/*Container*/
+/*Containers*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -146,6 +146,15 @@ form input:hover {
   color: rgb(230, 230, 230);
 }
 
+/*Footer*/
+.footer-site {
+  background-color: #333333;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30%;
+  text-align: center;
+}
 
 
 /********************* MEDIA QUERIES *****************/
